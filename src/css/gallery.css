@@ -21,7 +21,7 @@
 }
 
 .search-form input:focus {
-    border-color: #4e75ff;
+    border-color: #e26363;
 }
 
 .search-form input::placeholder {
@@ -35,11 +35,12 @@
 .search-form button {
     width: 75px;
     height: 40px;
-    background-color: #4e75ff;
+    background-color: #e26363;
     border: none;
     border-radius: 8px;
     color: #fff;
     font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -68,18 +69,21 @@
 .gallery a {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+    border: 2px solid rgb(231, 199, 199);
+    border-radius: 5%;
 }
 
 .gallery-list img {
     width: 360px;
     height: 200px;
     display: block;
+    border-radius: 5%;
 }
 
 .info {
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    gap: 35px;
 }
 
 .info p {
@@ -87,6 +91,7 @@
     flex-direction: column;
     margin: 0;
     margin-left: 5px;
+    font-size: 15px;
 }
 
 .loader {
@@ -98,6 +103,7 @@
     display: inline-block;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
+    margin-bottom: 10px;
 }
 
 @keyframes rotation {
@@ -115,16 +121,18 @@
 }
 
 .load-more-btn {
+    font-size: 15px;
+    font-weight: 600;
     width: 125px;
     height: 40px;
     color: #fff;
     border-radius: 8px;
     outline: none;
     border: none;
-    background: #4e75ff;
+    background: #e26363;
     transition: background 0.2s ease-in-out;
-    margin-top: 32px;
-    margin: 0 auto;
+    margin: 32px 0;
+
 }
 
 .load-more-btn:hover {

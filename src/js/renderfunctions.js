@@ -115,10 +115,10 @@ function createImageMarkup(img) {
       <a href="${img.largeImageURL}">
         <img src="${img.webformatURL}" alt="${img.tags}" loading="lazy" />
         <div class="info">
-          <p><b>Likes</b> ${img.likes}</p>
-          <p><b>Views</b> ${img.views}</p>
-          <p><b>Comments</b> ${img.comments}</p>
-          <p><b>Downloads</b> ${img.downloads}</p>
+          <p><b>&#9829;</b> ${img.likes}</p>
+          <p><b>&#128065</b> ${img.views}</p>
+          <p><b>&#128488</b> ${img.comments}</p>
+          <p><b>&#10515</b> ${img.downloads}</p>
         </div>
       </a>
     </li>
@@ -131,7 +131,7 @@ function checkEndOfCollection() {
     if (currentImageCount >= totalHits) {
         hideLoadMoreBtn();
         if (totalHits > 0) {
-            showToast('info', 'Üzgünüz, arama sonuçlarının sonuna ulaştınız.');
+            showToast('info', 'arama sonuçlarının sonuna ulaştınız.');
         }
     } else {
         showLoadMoreBtn();
@@ -163,6 +163,6 @@ function showToast(type, message) {
     iziToast[type]({
         message: message,
         position: 'topRight',
-        timeout: 3000,
+        timeout: 2000,
     });
 }

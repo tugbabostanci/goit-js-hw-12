@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Page 2</title>
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+
+</head>
+
+<body>
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+
+        <div class="container">
+
+        </div>
+
+        <div class="container">
+            <form class="search-form">
+                <input type="text" name="searchQuery" placeholder="Search images..." required />
+                <button class="form-btn" type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="loader" class="loader hidden"> </div>
+
+        <div class="gallery">
+            <ul class="gallery-list"></ul>
+        </div>
+
+        <button class="load-more-btn" type="button">Load More</button>
     </main>
 
-    <load src="./partials/footer.html" />
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    <script type="module" src="./js/renderfunctions.js"></script>
+</body>
+
 </html>

@@ -59,6 +59,8 @@ body {
     flex-wrap: wrap;
     width: 1600px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -128,6 +130,7 @@ body {
     background: #4e75ff;
     transition: background 0.2s ease-in-out;
     margin-top: 32px;
+    margin-left: 1oopx;
 }
 
 .load-more-btn:hover {
